@@ -1,9 +1,10 @@
 {
-  "name": "udentity-frontend",
+  "name": "address-book-app",
   "version": "1.0.0",
   "description": "React application",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack-dev-server --config webpack.dev.config.js --mode development --color --progress --hot --open",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-dev": "rm -rf dist && webpack --mode development --config webpack.server.config.js && webpack --mode development --config webpack.dev.config.js",
     "build-prod": "rm -rf dist && webpack --mode production --config webpack.server.config.js && webpack --mode production --config webpack.prod.config.js",
@@ -23,14 +24,22 @@
   "dependencies": {
     "express": "^4.16.4",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "dotenv-webpack": "^1.7.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.4.4",
     "@babel/preset-env": "^7.4.3",
     "@babel/preset-react": "^7.0.0",
+    "@loadable/babel-plugin": "^5.7.2",
+    "@loadable/webpack-plugin": "^5.7.1",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
+    "babel-plugin-import": "^1.11.0",
+    "copy-webpack-plugin": "^5.0.2",
     "css-loader": "^2.1.1",
     "eslint": "^5.16.0",
     "eslint-config-react": "^1.1.7",
@@ -43,13 +52,16 @@
     "less-loader": "^4.1.0",
     "mini-css-extract-plugin": "^0.5.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "prop-types": "^15.7.2",
     "style-loader": "^0.23.1",
     "uglifyjs-webpack-plugin": "^2.1.2",
+    "url-loader": "^1.1.2",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-dev-middleware": "^3.6.2",
     "webpack-dev-server": "^3.2.1",
     "webpack-hot-middleware": "^2.24.3",
+    "webpack-merge": "^4.2.1",
     "webpack-node-externals": "^1.7.2"
   }
 }
