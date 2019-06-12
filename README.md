@@ -16,6 +16,6 @@ npm run build-prod & npm run start
 
 Development (Webpack dev server) mode:
 
-npm run build-dev & npm run start
+npm run dev
 
-Serving at http://localhost:8080
+Serving at http://localhost:8000
