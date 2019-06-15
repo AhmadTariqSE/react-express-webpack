@@ -12,7 +12,7 @@ Running
 
 Production mode:
 
-npm run build-prod & npm run start
+npm run build & npm run start
 
 Development (Webpack dev server) mode:
 
